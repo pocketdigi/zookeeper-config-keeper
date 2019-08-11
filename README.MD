@@ -4,7 +4,8 @@
  
 ### 配置中心架构图
  
- 
+
+![架构图](https://github.com/pocketdigi/zookeeper-config-keeper/raw/master/docs/images/configuration-architecture.png)
  
  
 
