@@ -87,6 +87,7 @@
 
 
 	<build>
+		<finalName>zookeeper-config-keeper</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

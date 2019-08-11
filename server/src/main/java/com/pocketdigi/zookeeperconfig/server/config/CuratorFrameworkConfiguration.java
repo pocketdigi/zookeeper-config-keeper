@@ -15,14 +15,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class CuratorFrameworkConfiguration {
 
-    @Value("${zookeeper.connectionString}")
-    String zookeeperConnectionString;
+    @Value("${zookeeperaddress}")
+    String zookeeperAddress;
 
     @Bean(destroyMethod = "close")
     CuratorFramework curatorFramework() {
         RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
         CuratorFramework client = CuratorFrameworkFactory
-            .newClient(zookeeperConnectionString, retryPolicy);
+            .newClient(zookeeperAddress, retryPolicy);
         client.start();
         return client;
     }

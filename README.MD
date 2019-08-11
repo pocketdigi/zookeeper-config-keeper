@@ -29,3 +29,12 @@ Vue、element-ui
 
 前后端接口通讯使用JWT鉴权。
 
+### 部署
+#### 源码编译
+clone 源码，分别编译server和web-front,server需要修改jwtsecret和zookeeperaddress，web-front修改src/constants/constants.js里的BASE_URL，换成server的地址。
+
+#### docker部署
+```
+docker run  --name=zkck -p 80:80 -e jwtsecret=asdfwefasdf -e zookeeperaddress=192.168.2.103:2181 pocketdigi/zookeeper-config-keeper:v0.1 
+```
+修改jwtsecret和zookeeperaddress
