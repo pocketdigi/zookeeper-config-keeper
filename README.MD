@@ -38,3 +38,7 @@ clone 源码，分别编译server和web-front,server需要修改jwtsecret和zook
 docker run  --name=zkck -p 80:80 -e jwtsecret=asdfwefasdf -e zookeeperaddress=192.168.2.103:2181 pocketdigi/zookeeper-config-keeper:v0.1 
 ```
 修改jwtsecret和zookeeperaddress
+
+#### 线上Demo
+
+[http://zookeeper-config-keeper.test.pocketdigi.com](http://zookeeper-config-keeper.test.pocketdigi.com)  账号密码都是admin
